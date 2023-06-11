@@ -1,6 +1,11 @@
 header {
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100svw;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8); /* Setzen Sie den Hintergrund auf weiß mit 70% Transparenz */
+    backdrop-filter: blur(10px); /* Weichzeichner (blur) Effekt */
+    z-index: 1;
     a {
         padding: 8px;
         text-decoration: none;
