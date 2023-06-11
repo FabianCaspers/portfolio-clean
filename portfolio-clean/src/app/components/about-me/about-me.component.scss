@@ -1,0 +1,207 @@
+.about-me-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 150px 4rem 150px 4rem;
+    border-bottom: 1px solid rgba(193, 206, 222, 0.57);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    .about-me-header {
+        display: flex;
+        margin-bottom: 60px;
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100%;
+            object-position: 0 15px;
+        }
+
+        .about-me-text {
+            text-align: center;
+            width: 350px;
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #2d2e32;
+
+            h1 {
+                margin-bottom: 1rem;
+                color: #2d2e32;
+                text-transform: uppercase;
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    hr {
+        border-color: rgba(193, 206, 222, 0.57);
+        width: 100%;
+    }
+
+    .about-me-body {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        width: 100%;
+
+        .cv-boxes {
+            display: flex;
+            // justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 250px;
+            font-size: 1rem;
+
+            .icon-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #d5d5d5;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: cover;
+                }
+            }
+
+            .text-container {
+                .headline {
+                    margin-bottom: 1rem;
+                    text-transform: uppercase;
+                    color: #2d2e32;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+
+                p {
+                    line-height: 1.5;
+                    color: #2d2e32;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+// 4K / 2560px:
+@media (min-width: 2560px) {
+    .about-me-header {
+        img {
+            width: 300px !important;
+            height: 300px !important;
+            object-position: -60px !important;
+        }
+    }
+
+    .about-me-text {
+        width: 585px !important;
+
+        h1 {
+            font-size: 2.5rem !important;
+        }
+
+        p {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    .cv-boxes {
+        width: 360px !important;
+
+        .icon-container {
+            width: 90px !important; 
+            height: 90px !important;
+            margin-bottom: 2rem !important;
+
+            img {
+                width: 40px !important;
+                height: 40px !important;
+            }
+        }
+
+        .text-container {
+            .headline {
+                font-size: 1.5rem !important;
+                margin-bottom: 2rem !important;
+            }
+
+            p {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
+
+// Sonstige Größe / 1360px:
+@media (max-width: 1360px) {
+    .about-me-body {
+        flex-direction: column;
+        margin-top: 0 !important;
+
+        .cv-boxes {
+            width: unset !important;
+            margin-top: 60px;
+        }
+    }
+}
+
+// Laptop / 1024px:
+@media (max-width: 1024px) {
+    .about-me-body {
+        flex-direction: column;
+        margin-top: 0 !important;
+
+        .cv-boxes {
+            width: unset !important;
+            margin-top: 60px;
+        }
+    }
+}
+
+// Sonstige Größe / 720px:
+@media (max-width: 720px) {
+    .about-me-header {
+        flex-direction: column;
+        align-items: center;
+
+        .about-me-text {
+            margin-left: unset !important;
+            margin-top: 60px;
+            width: unset !important;
+        }
+    }
+}
+
+// Mobile L / 425px: 
+@media (max-width: 425px) {
+    .about-me-header {
+        flex-direction: column;
+        align-items: center;
+
+        .about-me-text {
+            margin-left: unset !important;
+            margin-top: 60px;
+            width: unset !important;
+        }
+    }
+}
