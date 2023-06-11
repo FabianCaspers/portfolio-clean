@@ -12,6 +12,7 @@
         // height: 65rem;
         justify-content: center;
         position: relative;
+        flex-direction: column;
         .hero-main {
             align-items: center;
             display: flex;
@@ -76,12 +77,9 @@
 
         .skills {
             align-items: center;
-            bottom: -75px;
             color: #767676;
             display: flex;
             font-size: 1.7rem;
-            left: 0;
-            position: absolute;
             p {
                 border-right: 2px solid rgba(45, 46, 50, 0.5);
                 color: #2d2e32;
