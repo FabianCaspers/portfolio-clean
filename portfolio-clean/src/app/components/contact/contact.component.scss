@@ -8,15 +8,16 @@
         flex-direction: column;
         .contact-title {
             p {
-                color: #147efb;
-                font-size: 1.7rem;
+                color: #1d1d1f;
+                font-size: 2.5rem;
                 font-weight: 700;
                 margin-bottom: 1rem;
                 text-transform: uppercase;
             }
             h3 {
-                color: #2d2e32;
-                font-size: 2.5rem;
+                color: #1d1d1f;
+                font-size: 2rem;
+                font-weight: 400;
             }
         }
         .contact-icons {
@@ -51,6 +52,9 @@
                         cursor: pointer;
                         font-size: 1.7rem;
                         text-decoration: none;
+                        &:hover {
+                            color: #2997ff;
+                        }
                     }
                 }
             }

@@ -1,19 +1,24 @@
+.content {
+    background-color: #000;
+    width: 100%;
+}
 .about-me-container {
     max-width: 107rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     padding: 150px 4rem 150px 4rem;
-    border-bottom: 1px solid rgba(193, 206, 222, 0.57);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-
+    
     .about-me-header {
         display: flex;
         margin-bottom: 60px;
-
+        
         img {
             width: 200px;
             height: 200px;
@@ -21,7 +26,7 @@
             border-radius: 100%;
             object-position: 0 15px;
         }
-
+        
         .about-me-text {
             text-align: center;
             width: 350px;
@@ -30,122 +35,120 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #2d2e32;
-
+            color: #fff;
+            
             h1 {
                 margin-bottom: 1rem;
-                color: #2d2e32;
+                color: #fff;
                 text-transform: uppercase;
                 font-size: 3rem;
             }
-
+            
             p {
                 font-size: 1.1rem;
                 line-height: 1.5;
             }
         }
     }
-
+    
     hr {
-        border-color: rgba(193, 206, 222, 0.57);
+        border-color: rgba(255, 255, 255, 0.5);
         width: 100%;
     }
-
+    
     .about-me-body {
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
         width: 100%;
-
+        
         .cv-boxes {
             display: flex;
-            // justify-content: center;
             flex-direction: column;
             text-align: center;
             align-items: center;
             width: 250px;
             font-size: 1rem;
-
+            
+            &.blue {
+                .icon-container {
+                    background: linear-gradient(to bottom right, #0070c9, #004785);
+                }
+                
+                .text-container {
+                    .headline {
+                        color: #0070c9;
+                    }
+                }
+            }
+            
+            &.green {
+                .icon-container {
+                    background: linear-gradient(to bottom right, #4caf50, #2e7d32);
+                }
+                
+                .text-container {
+                    .headline {
+                        color: #4caf50;
+                    }
+                }
+            }
+            
+            &.yellow {
+                .icon-container {
+                    background: linear-gradient(to bottom right, #f9a825, #c17900);
+                }
+                
+                .text-container {
+                    .headline {
+                        color: #f9a825;
+                    }
+                }
+            }
+            
+            &.red {
+                .icon-container {
+                    background: linear-gradient(to bottom right, #d50000, #8e0000);
+                }
+                
+                .text-container {
+                    .headline {
+                        color: #d50000;
+                    }
+                }
+            }
+            
             .icon-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #d5d5d5;
+                background-color: #3d3d3d;
                 border-radius: 50%;
                 width: 70px;
                 height: 70px;
                 margin-bottom: 1rem;
-
+                
                 img {
                     width: 30px;
                     height: 30px;
                     object-fit: cover;
                 }
             }
-
+            
             .text-container {
                 .headline {
                     margin-bottom: 1rem;
                     text-transform: uppercase;
-                    color: #2d2e32;
+                    color: #fff;
                     text-transform: uppercase;
                     font-weight: 800;
                 }
-
+                
                 p {
                     line-height: 1.5;
-                    color: #2d2e32;
+                    color: #fff;
                     font-weight: 500;
                 }
-            }
-        }
-    }
-}
-
-// 4K / 2560px:
-@media (min-width: 2560px) {
-    .about-me-header {
-        img {
-            width: 300px !important;
-            height: 300px !important;
-            object-position: -60px !important;
-        }
-    }
-
-    .about-me-text {
-        width: 585px !important;
-
-        h1 {
-            font-size: 2.5rem !important;
-        }
-
-        p {
-            font-size: 1.5rem !important;
-        }
-    }
-
-    .cv-boxes {
-        width: 360px !important;
-
-        .icon-container {
-            width: 90px !important; 
-            height: 90px !important;
-            margin-bottom: 2rem !important;
-
-            img {
-                width: 40px !important;
-                height: 40px !important;
-            }
-        }
-
-        .text-container {
-            .headline {
-                font-size: 1.5rem !important;
-                margin-bottom: 2rem !important;
-            }
-
-            p {
-                font-size: 1.5rem !important;
             }
         }
     }

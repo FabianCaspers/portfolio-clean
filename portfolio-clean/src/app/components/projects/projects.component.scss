@@ -7,16 +7,17 @@
         display: flex;
         flex-direction: column;
         p {
-            color: #147efb;
-            font-size: 1.7rem;
+            color: #1d1d1f;
+            font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             text-transform: uppercase;
         }
         h3 {
-            color: #2d2e32;
-            font-size: 2.5rem;
+            color: #1d1d1f;
+            font-size: 2rem;
             margin-bottom: 6rem;
+            font-weight: 400;
         }
         .projects-grid {
             grid-gap: 5rem;
@@ -39,15 +40,21 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 display: flex;
                 .project-img {
-                    background-color: hsla(0, 0%, 46%, 0.2);
+                    // background-color: hsla(0, 0%, 46%, 0.2);
                     border-radius: 1.7rem;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                     height: auto;
                     overflow: hidden;
                     width: 30rem;
+                    transition: all 250ms ease;
+                    &:hover {
+                        box-shadow: 0 1.5rem 3.4rem rgba(0,0,0,0.3), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+                        transform: translate(0, -1rem);
+                    }
                     img {
                         height: auto;
                         width: 100%;
+
                     }
                 }
                 .project-text {
@@ -58,11 +65,12 @@
                     text-align: center;
                     width: 35rem;
                     h3 {
-                        color: #2d2e32;
+                        color: #1d1d1f;
                         font-size: 1.7rem;
                         margin-bottom: 2rem;
                         position: relative;
                         text-transform: uppercase;
+                        font-weight: 700;
                     }
                     p {
                         color: #767676;
@@ -80,11 +88,16 @@
                         p {
                             background-color: #fff;
                             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                            color: #000 !important;
+                            color: #AF0A2A !important;
                             font-weight: 600 !important;
                             padding: 1rem 1.3rem;
                             text-align: center;
                             text-transform: none;
+                            cursor: default;
+                            transition: all 250ms ease;
+                            &:hover {
+                                border-radius: 2rem;
+                            }
                         }
                     }
                     .links {
@@ -94,7 +107,7 @@
                         justify-content: space-evenly;
                         margin-top: 3rem;
                         a {
-                            color: #2d2e32;
+                            color: #2997ff;
                             font-size: 1.7rem;
                             font-weight: 500;
                             gap: 5px;
@@ -103,6 +116,7 @@
                             display: flex;
                             &:hover {
                                 color: #147efb;
+                                text-decoration: underline;
                             }
                         }
                     }

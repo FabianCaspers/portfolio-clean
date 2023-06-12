@@ -1,5 +1,5 @@
 header {
-    padding: 16px;
+    padding: 16px 4rem 16px 4rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     width: 100svw;
     position: fixed;
@@ -16,7 +16,7 @@ header {
         letter-spacing: 0px;
         transition: color 200ms ease;
         &:hover {
-            color: #5463a0;
+            color: #2997ff;
         }
     }
     .menu {
