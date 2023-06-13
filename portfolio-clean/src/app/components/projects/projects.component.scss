@@ -27,8 +27,18 @@
             grid-template-rows: auto auto;
             height: auto;
             width: 100%;
+            @media (max-width: 1304px) {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
             .reverse {
                 flex-direction: row-reverse !important;
+                @media (max-width: 480px) {
+                    flex-direction: column !important;
+                    padding: 0;
+                }
             }
             .project-row {
                 flex-direction: row;
@@ -39,6 +49,12 @@
                 border-radius: 1.7rem;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 display: flex;
+                @media (max-width: 1304px) {
+                    flex-direction: column !important;
+                }
+                @media (max-width: 480px) {
+                    padding: 0;
+                }
                 .project-img {
                     // background-color: hsla(0, 0%, 46%, 0.2);
                     border-radius: 1.7rem;
@@ -47,14 +63,26 @@
                     overflow: hidden;
                     width: 30rem;
                     transition: all 250ms ease;
+                    @media (max-width: 821px) {
+                        width: unset;
+                    }
+                   a {
+                    @media (max-width: 480px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                   }
                     &:hover {
-                        box-shadow: 0 1.5rem 3.4rem rgba(0,0,0,0.3), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+                        box-shadow: 0 1.5rem 3.4rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
                         transform: translate(0, -1rem);
                     }
                     img {
                         height: auto;
                         width: 100%;
-
+                        @media (max-width: 480px) {
+                            width: 80%;
+                        }
                     }
                 }
                 .project-text {
@@ -64,6 +92,10 @@
                     justify-content: center;
                     text-align: center;
                     width: 35rem;
+                    @media (max-width: 480px) {
+                        width: 100svw;
+                        padding: 16px;
+                    }
                     h3 {
                         color: #1d1d1f;
                         font-size: 1.7rem;
@@ -85,10 +117,11 @@
                         gap: 1rem;
                         justify-content: center;
                         margin-top: 1rem;
+                        flex-wrap: wrap;
                         p {
                             background-color: #fff;
                             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                            color: #AF0A2A !important;
+                            color: #af0a2a !important;
                             font-weight: 600 !important;
                             padding: 1rem 1.3rem;
                             text-align: center;

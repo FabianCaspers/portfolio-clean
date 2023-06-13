@@ -25,10 +25,13 @@
             flex-wrap: wrap;
             gap: 8rem;
             margin-top: 6rem;
+            justify-content: center;
             .contact-icon-box {
                 align-items: center;
                 display: flex;
                 gap: 1.5rem;
+                justify-content: center;
+                flex-direction: column;
                 span {
                     background-color: #fff;
                     border-radius: 50%;
@@ -37,6 +40,10 @@
                     img {
                         width: 48px;
                         height: 48px;
+                        @media (max-width: 821px) {
+                            width: 36px;
+                            height: 36px;
+                        }
                     }
                 }
                 .contact-info {
@@ -46,12 +53,21 @@
                     h3 {
                         color: #2d2e32;
                         font-size: 1.7rem;
+                        @media (max-width: 821px) {
+                            font-size: 1.3rem;
+                        }
                     }
                     p {
                         color: #767676;
                         cursor: pointer;
                         font-size: 1.7rem;
                         text-decoration: none;
+                        @media (max-width: 821px) {
+                            font-size: 1.3rem;
+                        }
+                        @media (max-width: 480px) {
+                            font-size: 1rem;
+                        }
                         &:hover {
                             color: #2997ff;
                         }

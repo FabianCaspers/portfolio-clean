@@ -79,6 +79,9 @@
                 position: relative;
                 transition: all 1s ease-in-out;
                 width: 40rem;
+                @media (max-width: 1170px ) {
+                    display: none;
+                }
             }
         }
 
@@ -87,12 +90,20 @@
             color: #767676;
             display: flex;
             font-size: 1.7rem;
+            @media (max-width: 480px ) {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100svw;
+            }
             p {
                 border-right: 2px solid rgba(45, 46, 50, 0.5);
                 color: #2d2e32;
                 font-family: Mulish, sans-serif;
                 font-weight: 600;
                 padding-right: 2rem;
+                @media (max-width: 480px ) {
+                    margin-bottom: 2rem;
+                }
             }
             .logos {
                 ul {
@@ -100,6 +111,11 @@
                     flex-wrap: wrap;
                     gap: 1rem;
                     list-style: none;
+                    @media (max-width: 480px ) {
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                    }
                     li {
                         align-items: center;
                         background-color: #fff;
