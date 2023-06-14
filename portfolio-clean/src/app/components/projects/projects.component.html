@@ -5,7 +5,7 @@
         <div class="projects-grid">
             <div *ngFor="let project of projects; let i = index" [class.reverse]="i % 2 !== 0" class="project-row">
                 <div class="project-img">
-                    <a href="#"><img [src]="project.image" alt=""></a>
+                    <a [href]="project.demoLink"><img [src]="project.image" alt=""></a>
                 </div>
                 <div class="project-text">
                     <h3>{{ project.name }}</h3>
