@@ -1,7 +1,7 @@
 <div id="projects" class="container">
     <div class="project-container">
         <p>portfolio</p>
-        <h3>Each project is a unique piece of development 🧩</h3>
+        <h3 translate>Each project is a unique piece of development 🧩</h3>
         <div class="projects-grid">
             <div *ngFor="let project of projects; let i = index" [class.reverse]="i % 2 !== 0" class="project-row">
                 <div class="project-img">
@@ -9,7 +9,7 @@
                 </div>
                 <div class="project-text">
                     <h3>{{ project.name }}</h3>
-                    <p>{{ project.description }}</p>
+                    <p translate>{{ project.description }}</p>
                     <div class="stack">
                         <p *ngFor="let tech of project.stack">{{ tech }}</p>
                     </div>

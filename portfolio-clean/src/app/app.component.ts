@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio Fabian Caspers';
+
+  constructor(translate: TranslateService) {
+     // the lang to use, if the lang isn't available, it will use the current loader to get them
+    // translate.use('en');
+}
 }

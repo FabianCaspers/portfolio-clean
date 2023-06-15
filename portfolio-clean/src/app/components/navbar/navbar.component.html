@@ -2,10 +2,12 @@
     <a class="logo" href="#home">Fabian Caspers</a>
 
     <div class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
+        <a translate href="#home">Home</a>
+        <a translate href="#about">About Me</a>
         <a href="#projects">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a translate href="#contact">Contact</a>
+        <a (click)="translateEN()">EN</a>
+        <a (click)="translateDE();">DE</a>
     </div>
 
     <div class="mobileMenuButton" (click)="openAndCloseMenu()"  #mobileMenuButton>
@@ -21,10 +23,10 @@
         </svg>
     </div>
     <div class="mobileMenu" #mobileMenu>
-        <a href="#home" (click)="openAndCloseMenu()" class="noselect" translate>Home</a>
-        <a href="#about" (click)="openAndCloseMenu()" class="noselect" translate>About Me</a>
+        <a translate href="#home" (click)="openAndCloseMenu()" class="noselect" translate>Home</a>
+        <a translate href="#about" (click)="openAndCloseMenu()" class="noselect" translate>About Me</a>
         <a href="#projects" (click)="openAndCloseMenu()" class="noselect" translate>Portfolio</a>
-        <a href="#contact" (click)="openAndCloseMenu()" class="noselect">Contact</a>
+        <a translate href="#contact" (click)="openAndCloseMenu()" class="noselect">Contact</a>
 
     </div>
 </header>
