@@ -37,6 +37,14 @@ header {
     .menu {
         position: relative;
         float: right;
+        display: flex;
+        .translate-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2rem;
+            cursor: pointer;
+        }
         @media (max-width: 720px) {
             display: none;
         }

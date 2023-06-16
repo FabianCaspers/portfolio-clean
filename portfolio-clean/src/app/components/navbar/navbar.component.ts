@@ -13,14 +13,24 @@ export class NavbarComponent implements OnInit {
   }
 
   translateEN() {
-    this.translate.use('en').subscribe(() => {
-      console.log('English translation set');
+    this.translate.use('en').subscribe(() => { 
     });
   }
   
   translateDE() {
-    this.translate.use('de').subscribe(() => {
-      console.log('German translation set');
+    this.translate.use('de').subscribe(() => { 
+    });
+  }
+
+  translateENMobile() {
+    this.translate.use('en').subscribe(() => { 
+      this.openAndCloseMenu();
+    });
+  }
+  
+  translateDEMobile() {
+    this.translate.use('de').subscribe(() => { 
+      this.openAndCloseMenu();
     });
   }
   
