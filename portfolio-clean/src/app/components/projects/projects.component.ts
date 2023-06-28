@@ -14,7 +14,7 @@ export class ProjectsComponent {
       stack: ['HTML', 'Angular', 'TypeScript'],
       codeLink: 'https://github.com/FabianCaspers/slack-clone.git',
       demoLink: 'https://chatterix.fabiancaspers.com/',
-      image: '../../../assets/img/join.png',
+      image: '../../../assets/img/chatterix.png',
       reverse: false
     },
     {
