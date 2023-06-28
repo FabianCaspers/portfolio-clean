@@ -9,6 +9,15 @@ export class ProjectsComponent {
 
   projects = [
     {
+      name: 'Chatterix',
+      description: 'Chatterix is a clone of Slack. You can create channels and write with each other',
+      stack: ['HTML', 'Angular', 'TypeScript'],
+      codeLink: 'https://github.com/FabianCaspers/slack-clone.git',
+      demoLink: 'https://chatterix.fabiancaspers.com/',
+      image: '../../../assets/img/join.png',
+      reverse: false
+    },
+    {
       name: 'Join',
       description: 'Join is a Kanban software that simplifies project management, optimizes workflows, and boosts productivity. With customizable boards and automated workflows, teams can track progress and collaborate seamlessly.',
       stack: ['HTML', 'CSS', 'JavaScript'],
