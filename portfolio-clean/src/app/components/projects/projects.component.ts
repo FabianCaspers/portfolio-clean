@@ -9,6 +9,15 @@ export class ProjectsComponent {
 
   projects = [
     {
+      name: 'Flixhub',
+      description: 'Flixhub is a clone of Netflix. It displays the latest movies from an API and lets you view details.',
+      stack: ['Angular', 'TypeScript', 'API'],
+      codeLink: 'https://github.com/FabianCaspers/Netflix-Clone.git',
+      demoLink: 'https://flixhub.fabiancaspers.com/',
+      image: '../../../assets/img/flixhub.png',
+      reverse: false
+    },
+    {
       name: 'Chatterix',
       description: 'Chatterix is a clone of Slack. You can create channels and write with each other',
       stack: ['HTML', 'Angular', 'TypeScript'],
