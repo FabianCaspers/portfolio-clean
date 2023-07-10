@@ -1,4 +1,43 @@
-<div id="projects" class="container">
+ <section>
+    <div class="header">
+      <p class="headline">portfolio</p>
+      <h3 class="underline" translate>Each project is a unique piece of development 🧩</h3>
+    </div>
+  
+    <div class="container">
+      <div class="project-grid" *ngFor="let project of projects">
+        <div class="project-container" >
+          <div class="image-wrapper">
+            <a href="{{ project.demoLink }}" target="_blank">
+              <figure class="image" [style.background-image]="'url(' + project.image + ')'"></figure>
+            </a>
+          </div>
+  
+          <div class="project-content">
+            <h3>{{ project.name }}</h3>
+            <p translate class="description">{{ project.description }}</p>
+            <p class="technology">
+              <span *ngFor="let tech of project.stack">{{ tech }}</span>
+            </p>
+            <a href="{{ project.demoLink }}" target="_blank">Live Demo</a>
+            <div class="git-container">
+              <p>
+                <a class="code" href="{{ project.codeLink }}" target="_blank">Show Code</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+<!-- OLD STYLE START -->
+
+  <!-- <div id="projects" class="container">
     <div class="project-container">
         <p>portfolio</p>
         <h3 translate>Each project is a unique piece of development 🧩</h3>
@@ -22,3 +61,6 @@
         </div>
     </div>
 </div>
+ -->
+
+ <!-- OLD STYLE END -->

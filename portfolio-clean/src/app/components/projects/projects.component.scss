@@ -1,4 +1,173 @@
+ section {
+    background-color: #161617;
+    padding-top: 100px;
+ }
+
+ .header {
+    margin-top: 68px;
+    background-color: #161617;
+    text-align: center;
+    .underline {
+        color: #f5f5f7;
+        font-size: 2rem;
+        margin-bottom: 6rem;
+        font-weight: 400;
+        padding-left: 1rem;
+            padding-right: 1rem;
+        @media (max-width: 670px ) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .headline {
+        color: #f5f5f7;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+ }
+
 .container {
+    /* max-width: 940px; */
+    padding: 0px 4rem 150px 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 34px;
+    background-color: #161617;
+    @media (max-width: 1022px ) {
+        margin-bottom: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 805px ) {
+        margin-bottom: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 580px ) {
+        margin-bottom: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+    .project-grid {
+        padding-bottom: 35px;
+        border-bottom: 1px solid #cecece;
+        margin-bottom: 0;
+        .project-container {
+            .image-wrapper {
+                a {
+                    text-decoration: none;
+                    color: #2997ff;
+                }
+                .image {
+                    /* width: 190px; */
+                    height: 257px;
+                    background-size: 235px 257px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    /* background-image: url(../../../assets/img/flixhub.png); */
+                }
+            }
+
+            .project-content {
+                position: relative;
+                z-index: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    color: #f5f5f7;
+                    font-weight: 600;
+                }
+                .description {
+                    color: #f5f5f7;
+                    max-width: 180px;
+                    margin-top: 7px;
+                    min-height: 160px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .technology {
+                    margin-top: 11px;
+                    font-size: 14px;
+                    line-height: 1.4285914286;
+                    font-weight: 400;
+                    letter-spacing: -0.016em;
+                    color: #f5f5f7;
+                    span {
+                        margin-right: 5px;
+                    }
+                    span:first-child {
+                        color: #bf0013;
+                    }
+                    span:nth-child(2) {
+                        color: #276787;
+                    }
+                    span:last-child {
+                        color: #998ca0;
+                    }
+                }
+                a {
+                    background: #0071e3;
+                    margin-top: 16px;
+                    color: #fff;
+                    border-color: transparent;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 1.3333733333;
+                    font-weight: 400;
+                    letter-spacing: -0.01em;
+                    border-style: solid;
+                    border-width: 1px;
+                    min-width: 25px;
+                    padding: 3px 10px;
+                    cursor: pointer;
+                    display: inline-block;
+                    text-align: center;
+                    white-space: nowrap;
+                    border-radius: 980px;
+                    border: 1px solid transparent;
+                    --sk-button-margin-horizontal: 10px;
+                    --sk-button-margin-vertical: 10px;
+                    &:hover {
+                        background: #06c;
+                    }
+                }
+                .git-container {
+                    padding-top: 11px;
+                    p {
+                        font-size: 14px;
+                        line-height: 1.4285914286;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                    }
+                    .code {
+                        color: #2997ff;
+                        background: unset;
+                        text-decoration: none;
+                        letter-spacing: inherit;
+                        font-weight: 400;
+                        font-size: 14px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* OLD STYLE START */
+
+/* .container {
     margin: 0 auto;
     max-width: 107rem;
     padding: 150px 4rem 150px 4rem;
@@ -168,3 +337,6 @@
         }
     }
 }
+ */
+
+ /* OLD STYLE END */

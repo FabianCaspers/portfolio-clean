@@ -28,7 +28,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Join',
-      description: 'Join is a Kanban software that simplifies project management, optimizes workflows, and boosts productivity. With customizable boards and automated workflows, teams can track progress and collaborate seamlessly.',
+      description: 'Join simplifies project management, optimizes workflows, and boosts productivity with customizable boards and automated workflows.',
       stack: ['HTML', 'CSS', 'JavaScript'],
       codeLink: 'https://github.com/FabianCaspers/Join.git',
       demoLink: 'https://join.fabiancaspers.com/',
@@ -37,7 +37,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Join 2.0',
-      description: 'Join is a Kanban software that simplifies project management, optimizes workflows, and boosts productivity. With customizable boards and automated workflows, teams can track progress and collaborate seamlessly.',
+      description: 'Join simplifies project management, optimizes workflows, and boosts productivity with customizable boards and automated workflows.',
       stack: ['HTML', 'CSS', 'JavaScript'],
       codeLink: 'https://github.com/FabianCaspers/join_dark.git',
       demoLink: 'https://darkjoin.fabiancaspers.com/',
@@ -55,7 +55,7 @@ export class ProjectsComponent {
     },
     {
       name: 'El Pollo Loco',
-      description: "In El Pollo Loco, players help Pepe fight off chickens using a throwable glass bottle and the ability to jump on them. It's a unique and fun game for all ages.",
+      description: "In El Pollo Loco, players fight chickens with glass bottles and jumping abilities. A unique, fun game for all ages.",
       stack: ['HTML', 'CSS', 'JavaScript'],
       codeLink: 'https://github.com/FabianCaspers/elpolloloco.git',
       demoLink: 'https://elpolloloco.fabiancaspers.com/index.html',
