@@ -66,7 +66,7 @@ export class ProjectsComponent {
       name: 'Personal Portfolio',
       description: 'My portfolio features projects utilizing Angular, showcasing visually captivating with a focus on web development.',
       stack: ['HTML', 'SCSS', 'Angular'],
-      codeLink: 'https://github.com/FabianCaspers/portfolio-v2.git',
+      codeLink: 'https://github.com/FabianCaspers/portfolio-clean.git',
       demoLink: 'https://fabiancaspers.com',
       image: '../../../assets/img/new-portfolio.png',
       reverse: false
