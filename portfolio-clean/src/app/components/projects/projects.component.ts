@@ -45,15 +45,6 @@ export class ProjectsComponent {
       reverse: true
     },
     {
-      name: 'Pokedex',
-      description: 'Based on the PokeAPI a simple library that provides and catalogues pokemon information.',
-      stack: ['HTML', 'CSS', 'JavaScript', 'API'],
-      codeLink: 'https://github.com/FabianCaspers/pokedex.git',
-      demoLink: 'https://pokedex.fabiancaspers.com/index.html',
-      image: '../../../assets/img/pokedex.png',
-      reverse: false
-    },
-    {
       name: 'El Pollo Loco',
       description: "In El Pollo Loco, players fight chickens with glass bottles and jumping abilities. A unique, fun game for all ages.",
       stack: ['HTML', 'CSS', 'JavaScript'],
