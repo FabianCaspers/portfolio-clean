@@ -36,10 +36,10 @@ export class ProjectsComponent {
       reverse: false
     },
     {
-      name: 'Join 2.0',
-      description: 'Join simplifies project management, optimizes workflows, and boosts productivity with customizable boards and automated workflows.',
-      stack: ['HTML', 'CSS', 'JavaScript'],
-      codeLink: 'https://github.com/FabianCaspers/join_dark.git',
+      name: 'Join [Django]',
+      description: 'Join, built with a Django backend, simplifies project management, optimizes workflows, and enhances productivity through customizable boards and automated processes.',
+      stack: ['Django', 'CSS', 'JavaScript'],
+      codeLink: 'https://github.com/FabianCaspers/join-backend.git',
       demoLink: 'https://darkjoin.fabiancaspers.com/',
       image: '../../../assets/img/join2.png',
       reverse: true
